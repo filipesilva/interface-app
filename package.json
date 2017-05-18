@@ -2,8 +2,10 @@
   "name": "interface-app",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -p",
-    "serve": "webpack-dev-server -p"
+    "build": "webpack",
+    "build-aot": "webpack -p --config webpack.config.aot.js",
+    "serve": "webpack-dev-server",
+    "serve-aot": "webpack-dev-server -p --config webpack.config.aot.js"
   },
   "dependencies": {
     "@angular/common": "^4.1.3",
